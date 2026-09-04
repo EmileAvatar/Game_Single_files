@@ -1,4 +1,4 @@
-- Effect of the Game
+Effect of the Game
 - Properties
   - ID
   - Name
