@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mission Posting Template</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 24px; background: #2b2320; color: #eee;
+    font-family: system-ui, sans-serif;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.hint { margin: 0 0 20px; color: #c9b183; }
+  .layout { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+  form {
+    background: #3a3128; border-radius: 10px; padding: 18px 20px;
+    min-width: 300px; flex: 1 1 320px;
+  }
+  label { display: block; font-size: 12px; margin: 12px 0 4px; color: #d9c79f; }
+  input[type=text], textarea {
+    width: 100%; box-sizing: border-box; padding: 7px 8px; border-radius: 5px;
+    border: 1px solid #6a5a45; background: #23201c; color: #f3e6c4; font-size: 13px;
+    font-family: inherit;
+  }
+  textarea { resize: vertical; min-height: 46px; }
+  select {
+    width: 100%; box-sizing: border-box; padding: 7px 8px; border-radius: 5px;
+    border: 1px solid #6a5a45; background: #23201c; color: #f3e6c4; font-size: 13px;
+  }
+  button {
+    margin-top: 12px; width: 100%; padding: 10px; border: none; border-radius: 6px;
+    background: #7a5a2f; color: #fff8ea; font-weight: bold; font-size: 14px; cursor: pointer;
+  }
+  button:hover { background: #8f6c3a; }
+  button#preview-btn { background: #4a6a4a; margin-top: 18px; }
+  button#preview-btn:hover { background: #5a7d5a; }
+  .preview {
+    flex: 1 1 420px; background: #171310; border-radius: 10px; padding: 20px;
+    display: flex; align-items: flex-start; justify-content: center;
+  }
+  #preview-container svg { max-width: 100%; height: auto; display: block; }
+</style>
+</head>
+<body>
+  <h1>Mission Posting Template</h1>
+  <p class="hint">Edit the fields — the preview updates live, and the Objective boxes auto-wrap/grow to fit whatever you type. Click "Save as SVG" to download the result.</p>
+
+  <div class="layout">
+    <form id="mission-form" onsubmit="return false;">
+      <label for="missionName">Mission Name</label>
+      <input type="text" id="missionName" value="The Howling Culling">
+
+      <label for="client">Client</label>
+      <input type="text" id="client" value="Millbrook Village Council">
+
+      <label for="rank">Rank</label>
+      <select id="rank">
+        <option value="S">S Rank</option>
+        <option value="A">A Rank</option>
+        <option value="B">B Rank</option>
+        <option value="C" selected>C Rank</option>
+        <option value="D">D Rank</option>
+        <option value="E">E Rank</option>
+        <option value="F">F Rank</option>
+      </select>
+
+      <label for="category">Category (a Mission Board category)</label>
+      <input type="text" id="category" value="Monster Hunting">
+
+      <label for="location">Location</label>
+      <input type="text" id="location" value="Greywood Forest, north of Millbrook">
+
+      <label for="timeLimit">Time Limit</label>
+      <input type="text" id="timeLimit" value="7 days">
+
+      <label for="partySize">Recommended Party Size</label>
+      <input type="text" id="partySize" value="2-4">
+
+      <label for="reward">Reward</label>
+      <input type="text" id="reward" value="150 gold + wolf pelt bundle">
+
+      <label for="objective">Objective</label>
+      <textarea id="objective">Reduce the Greywood wolf pack to under 5 members.</textarea>
+
+      <label for="bonusObjective">Bonus Objective (leave blank to hide this box)</label>
+      <textarea id="bonusObjective">Recover the alpha wolf's pelt for +50 gold.</textarea>
+
+      <label for="failurePenalty">Failure Penalty (leave blank to hide)</label>
+      <input type="text" id="failurePenalty" value="Minor Guild Standing loss">
+
+      <button id="preview-btn" type="button">Preview</button>
+      <button id="save-btn" type="button">Save as SVG</button>
+    </form>
+
+    <div class="preview">
+      <div id="preview-container"></div>
+    </div>
+  </div>
+
+  <script src="template_utils.js"></script>
+  <script src="mission_template.js"></script>
+  <script>
+    const form = document.getElementById('mission-form');
+    const preview = document.getElementById('preview-container');
+
+    function readData() {
+      return {
+        missionName: document.getElementById('missionName').value,
+        client: document.getElementById('client').value,
+        rank: document.getElementById('rank').value,
+        category: document.getElementById('category').value,
+        location: document.getElementById('location').value,
+        timeLimit: document.getElementById('timeLimit').value,
+        partySize: document.getElementById('partySize').value,
+        reward: document.getElementById('reward').value,
+        objective: document.getElementById('objective').value,
+        bonusObjective: document.getElementById('bonusObjective').value,
+        failurePenalty: document.getElementById('failurePenalty').value
+      };
+    }
+
+    function render() {
+      try {
+        preview.innerHTML = buildMissionSVG(readData());
+      } catch (err) {
+        preview.innerHTML = '<p style="color:#e88">Preview error: ' + err.message + '</p>';
+        console.error(err);
+      }
+    }
+
+    document.getElementById('preview-btn').addEventListener('click', render);
+    form.addEventListener('input', render);
+    document.getElementById('save-btn').addEventListener('click', () => {
+      const data = readData();
+      const svg = buildMissionSVG(data);
+      TemplateUtils.downloadSvg(svg, 'mission_' + TemplateUtils.slugify(data.missionName, 'mission'));
+    });
+
+    render();
+  </script>
+</body>
+</html>

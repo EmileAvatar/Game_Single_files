@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 580" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="parchment2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e6c4"/>
+      <stop offset="100%" stop-color="#e3cd9a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- pin (posting is tacked to the job board) -->
+  <line x1="210" y1="14" x2="210" y2="30" stroke="#3c3c3c" stroke-width="2"/>
+  <circle cx="210" cy="14" r="8" fill="#6b6b6b" stroke="#3c3c3c" stroke-width="1.5"/>
+
+  <!-- poster body -->
+  <rect x="15" y="25" width="390" height="535" rx="14" fill="url(#parchment2)" stroke="#5a3a1f" stroke-width="4"/>
+  <rect x="25" y="35" width="370" height="515" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <!-- small guild emblem, top-left -->
+  <g transform="translate(42,44) scale(0.55)">
+    <path d="M14 0 L28 6 V22 C28 34 20 42 14 46 C8 42 0 34 0 22 V6 Z" fill="#5a3a1f" stroke="#3c260f" stroke-width="1.5"/>
+    <path d="M14 6 L22 10 V22 C22 30 18 35 14 38 C10 35 6 30 6 22 V10 Z" fill="#e3cd9a"/>
+    <path d="M14 12 L14 30 M8 18 L20 18" stroke="#5a3a1f" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="210" y="52" text-anchor="middle" font-size="9.5" fill="#7a5a35" letter-spacing="2.5">GUILD JOB BOARD POSTING</text>
+
+  <!-- mission title -->
+  <text x="210" y="90" text-anchor="middle" font-size="27" font-weight="bold" fill="#4a2f16">The Howling Culling</text>
+  <line x1="45" y1="106" x2="375" y2="106" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- category tag + rank badge -->
+  <rect x="45" y="122" width="158" height="27" rx="13.5" fill="#c9b183" stroke="#5a3a1f" stroke-width="1.2"/>
+  <text x="124" y="140" text-anchor="middle" font-size="11" font-weight="bold" fill="#3c2810" letter-spacing="0.5">MONSTER HUNTING</text>
+
+  <circle cx="345" cy="136" r="30" fill="#2f8f42" stroke="#1f5c2c" stroke-width="4"/>
+  <circle cx="345" cy="136" r="24" fill="none" stroke="#e3cd9a" stroke-width="1.2"/>
+  <text x="345" y="147" text-anchor="middle" font-size="28" font-weight="bold" fill="#f3e6c4">C</text>
+  <text x="345" y="176" text-anchor="middle" font-size="9" fill="#4a2f16" letter-spacing="1.5">RANK</text>
+
+  <line x1="45" y1="196" x2="375" y2="196" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- info fields -->
+  <g font-size="12.5" fill="#3c2810">
+    <text x="45" y="220"><tspan font-weight="bold">CLIENT:</tspan> Millbrook Village Council</text>
+    <text x="45" y="244"><tspan font-weight="bold">LOCATION:</tspan> Greywood Forest, north of Millbrook</text>
+    <text x="45" y="268"><tspan font-weight="bold">TIME LIMIT:</tspan> 7 days</text>
+    <text x="45" y="292"><tspan font-weight="bold">PARTY SIZE:</tspan> 2-4 recommended</text>
+    <text x="45" y="316"><tspan font-weight="bold">REWARD:</tspan> 150 gold + wolf pelt bundle</text>
+  </g>
+
+  <line x1="45" y1="332" x2="375" y2="332" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- objective -->
+  <text x="45" y="352" font-size="11.5" font-weight="bold" fill="#4a2f16" letter-spacing="1.5">OBJECTIVE</text>
+  <rect x="45" y="358" width="330" height="54" rx="6" fill="#efe0b8" stroke="#8a6a3f" stroke-width="1.5"/>
+  <text x="60" y="379" font-size="12" fill="#3c2810">Reduce the Greywood wolf pack</text>
+  <text x="60" y="397" font-size="12" fill="#3c2810">to under 5 members.</text>
+
+  <!-- bonus objective -->
+  <text x="45" y="432" font-size="11.5" font-weight="bold" fill="#4a2f16" letter-spacing="1.5">BONUS OBJECTIVE</text>
+  <rect x="45" y="438" width="330" height="54" rx="6" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="60" y="459" font-size="12" fill="#3c2810">Recover the alpha wolf's pelt</text>
+  <text x="60" y="477" font-size="12" fill="#3c2810">for +50 gold.</text>
+
+  <!-- failure penalty -->
+  <text x="45" y="514" font-size="11" font-style="italic" fill="#7a2f1f">Failure Penalty: Minor Guild Standing loss</text>
+
+  <!-- footer -->
+  <text x="210" y="545" text-anchor="middle" font-size="9" font-style="italic" fill="#7a5a35">Posted at the Adventurers' Guild Job Board</text>
+</svg>

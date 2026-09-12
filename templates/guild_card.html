@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Guild Card Template</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 24px; background: #2b2320; color: #eee;
+    font-family: system-ui, sans-serif;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.hint { color: #bda; margin: 0 0 20px; color: #c9b183; }
+  .layout { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+  form {
+    background: #3a3128; border-radius: 10px; padding: 18px 20px;
+    min-width: 300px; flex: 1 1 320px;
+  }
+  label { display: block; font-size: 12px; margin: 12px 0 4px; color: #d9c79f; }
+  input[type=text] {
+    width: 100%; box-sizing: border-box; padding: 7px 8px; border-radius: 5px;
+    border: 1px solid #6a5a45; background: #23201c; color: #f3e6c4; font-size: 13px;
+  }
+  select {
+    width: 100%; box-sizing: border-box; padding: 7px 8px; border-radius: 5px;
+    border: 1px solid #6a5a45; background: #23201c; color: #f3e6c4; font-size: 13px;
+  }
+  fieldset { border: 1px solid #55483a; border-radius: 6px; margin: 18px 0 0; }
+  legend { font-size: 11px; color: #c9b183; padding: 0 6px; }
+  button {
+    margin-top: 12px; width: 100%; padding: 10px; border: none; border-radius: 6px;
+    background: #7a5a2f; color: #fff8ea; font-weight: bold; font-size: 14px; cursor: pointer;
+  }
+  button:hover { background: #8f6c3a; }
+  button#preview-btn { background: #4a6a4a; margin-top: 18px; }
+  button#preview-btn:hover { background: #5a7d5a; }
+  .preview {
+    flex: 1 1 420px; background: #171310; border-radius: 10px; padding: 20px;
+    display: flex; align-items: flex-start; justify-content: center;
+  }
+  #preview-container svg { max-width: 100%; height: auto; display: block; }
+</style>
+</head>
+<body>
+  <h1>Guild Card Template</h1>
+  <p class="hint">Edit the fields — the preview updates live. Click "Save as SVG" to download the result.</p>
+
+  <div class="layout">
+    <form id="card-form" onsubmit="return false;">
+      <label for="name">Adventurer Name</label>
+      <input type="text" id="name" value="Elira Duskwind">
+
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" value="AG-014522">
+
+      <label for="rank">Rank</label>
+      <select id="rank">
+        <option value="S">S — Guild Legend</option>
+        <option value="A">A — Elite</option>
+        <option value="B">B — Veteran</option>
+        <option value="C" selected>C — Adventurer</option>
+        <option value="D">D — Journeyman</option>
+        <option value="E">E — Novice</option>
+        <option value="F">F — Trainee</option>
+      </select>
+
+      <label for="primaryDesignation">Primary Designation (main role, can change over time)</label>
+      <input type="text" id="primaryDesignation" value="Mage">
+
+      <label for="specialDesignations">Special Designations (comma-separated, leave blank for none)</label>
+      <input type="text" id="specialDesignations" value="Tracker, Dragon Slayer">
+
+      <label for="partyAffiliation">Party Affiliation (leave blank for a solo adventurer)</label>
+      <input type="text" id="partyAffiliation" value="The Ashen Vanguard">
+
+      <label for="registrationDate">Registration Date</label>
+      <input type="text" id="registrationDate" value="14th of Solmonth">
+
+      <label for="issuingBranch">Issuing Branch</label>
+      <input type="text" id="issuingBranch" value="Millbrook Branch">
+
+      <fieldset>
+        <legend>Advanced (optional)</legend>
+        <label for="guildName">Guild Name</label>
+        <input type="text" id="guildName" value="ADVENTURERS' GUILD">
+
+        <label for="portraitImageUrl">Portrait Image URL</label>
+        <input type="text" id="portraitImageUrl" placeholder="leave blank for the default silhouette">
+      </fieldset>
+
+      <button id="preview-btn" type="button">Preview</button>
+      <button id="save-btn" type="button">Save as SVG</button>
+    </form>
+
+    <div class="preview">
+      <div id="preview-container"></div>
+    </div>
+  </div>
+
+  <script src="template_utils.js"></script>
+  <script src="guild_card_template.js"></script>
+  <script>
+    const form = document.getElementById('card-form');
+    const preview = document.getElementById('preview-container');
+
+    function readData() {
+      return {
+        name: document.getElementById('name').value,
+        cardNumber: document.getElementById('cardNumber').value,
+        rank: document.getElementById('rank').value,
+        primaryDesignation: document.getElementById('primaryDesignation').value,
+        specialDesignations: document.getElementById('specialDesignations').value
+          .split(',').map((s) => s.trim()).filter(Boolean),
+        partyAffiliation: document.getElementById('partyAffiliation').value,
+        registrationDate: document.getElementById('registrationDate').value,
+        issuingBranch: document.getElementById('issuingBranch').value,
+        guildName: document.getElementById('guildName').value,
+        portraitImageUrl: document.getElementById('portraitImageUrl').value
+      };
+    }
+
+    function render() {
+      try {
+        preview.innerHTML = buildGuildCardSVG(readData());
+      } catch (err) {
+        preview.innerHTML = '<p style="color:#e88">Preview error: ' + err.message + '</p>';
+        console.error(err);
+      }
+    }
+
+    document.getElementById('preview-btn').addEventListener('click', render);
+    form.addEventListener('input', render);
+    document.getElementById('save-btn').addEventListener('click', () => {
+      const data = readData();
+      const svg = buildGuildCardSVG(data);
+      TemplateUtils.downloadSvg(svg, 'guild_card_' + TemplateUtils.slugify(data.name, 'adventurer'));
+    });
+
+    render();
+  </script>
+</body>
+</html>
