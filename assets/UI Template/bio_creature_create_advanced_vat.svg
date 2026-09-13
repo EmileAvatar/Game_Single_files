@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="panelWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a341c"/>
+      <stop offset="100%" stop-color="#2a1c0f"/>
+    </linearGradient>
+    <linearGradient id="buttonWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6226"/>
+      <stop offset="100%" stop-color="#5a3a14"/>
+    </linearGradient>
+    <linearGradient id="vatFluid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7fd4a0"/>
+      <stop offset="100%" stop-color="#2a6e4a"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#14100b"/>
+  <rect x="60" y="40" width="840" height="520" rx="14" fill="url(#panelWood)" stroke="#c9a227" stroke-width="4"/>
+  <rect x="72" y="52" width="816" height="496" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <text x="96" y="88" font-size="20" font-weight="bold" fill="#f0dfa8">BIO CREATURE CREATE — ADVANCED (WITH VAT)</text>
+  <text x="96" y="108" font-size="12" fill="#c9b183" letter-spacing="1.5">STATION: VITAE INCUBATOR · REQUIRED SKILL 30</text>
+  <circle cx="866" cy="80" r="14" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+  <text x="866" y="85" text-anchor="middle" font-size="14" fill="#e8dcc0">✕</text>
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- left: part slots (condensed) -->
+  <g>
+    <rect x="90" y="134" width="200" height="364" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="104" y="156" font-size="10" fill="#9c8a68" letter-spacing="1">PART SLOTS</text>
+    <g font-size="7" fill="#c9b183">
+      <rect x="104" y="166" width="42" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="125" y="190" text-anchor="middle" fill="#f0dfa8">BRAIN</text>
+      <rect x="152" y="166" width="42" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="173" y="190" text-anchor="middle" fill="#f0dfa8">EYES</text>
+      <rect x="200" y="166" width="42" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="221" y="190" text-anchor="middle" fill="#f0dfa8">BODY</text>
+      <rect x="248" y="166" width="30" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+
+      <rect x="104" y="214" width="42" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="125" y="238" text-anchor="middle" fill="#f0dfa8">LIMBS</text>
+      <rect x="152" y="214" width="42" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="173" y="238" text-anchor="middle" fill="#f0dfa8">WINGS</text>
+      <rect x="200" y="214" width="42" height="42" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+      <text x="221" y="238" text-anchor="middle" fill="#7a6a50">TAIL</text>
+      <rect x="248" y="214" width="30" height="42" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+    </g>
+    <text x="104" y="284" font-size="9" fill="#9c8a68" letter-spacing="1">TEMPLATE</text>
+    <text x="104" y="302" font-size="9" fill="#e8dcc0">Complex Hybrid (Drake, 7 parts)</text>
+
+    <text x="104" y="330" font-size="9" fill="#9c8a68" letter-spacing="1">ESSENCE REQUIREMENT</text>
+    <text x="104" y="348" font-size="8" fill="#e8dcc0">Life Essence</text>
+    <rect x="104" y="352" width="174" height="7" rx="3.5" fill="#1a1209"/>
+    <rect x="104" y="352" width="140" height="7" rx="3.5" fill="#3f8f4a"/>
+    <text x="104" y="372" font-size="8" fill="#e8dcc0">Soul Essence</text>
+    <rect x="104" y="376" width="174" height="7" rx="3.5" fill="#1a1209"/>
+    <rect x="104" y="376" width="60" height="7" rx="3.5" fill="#7a5fbf"/>
+
+    <text x="104" y="470" font-size="9" fill="#9c8a68" letter-spacing="1">MUTATION RISK</text>
+    <rect x="104" y="478" width="174" height="8" rx="4" fill="#1a1209"/>
+    <rect x="104" y="478" width="17" height="8" rx="4" fill="#c9a227"/>
+    <text x="104" y="494" font-size="8" fill="#6fae6f">10% (reduced by Incubator)</text>
+  </g>
+
+  <!-- center: vat visualization -->
+  <g>
+    <rect x="308" y="134" width="270" height="364" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="322" y="156" font-size="10" fill="#9c8a68" letter-spacing="1">VITAE INCUBATOR</text>
+    <rect x="378" y="168" width="130" height="150" rx="16" fill="#1a1209" stroke="#8a6a3f" stroke-width="3"/>
+    <rect x="386" y="230" width="114" height="82" rx="12" fill="url(#vatFluid)"/>
+    <ellipse cx="443" cy="230" rx="57" ry="8" fill="#a8f0c0" opacity="0.6"/>
+    <text x="443" y="278" text-anchor="middle" font-size="9" fill="#0a2a18" font-weight="bold">GROWING…</text>
+
+    <text x="322" y="342" font-size="9" fill="#9c8a68" letter-spacing="1">GROWTH PROGRESS</text>
+    <rect x="322" y="350" width="234" height="12" rx="6" fill="#1a1209"/>
+    <rect x="322" y="350" width="140" height="12" rx="6" fill="#3f8f4a"/>
+    <text x="322" y="376" font-size="9" fill="#c9b183">Day 4 of 7</text>
+
+    <text x="322" y="400" font-size="9" fill="#9c8a68" letter-spacing="1">FUEL</text>
+    <text x="322" y="416" font-size="9" fill="#e8dcc0">Nutrients + Life Essence, Soul Essence</text>
+
+    <text x="322" y="440" font-size="9" fill="#9c8a68" letter-spacing="1">STATION STATS</text>
+    <text x="322" y="456" font-size="9" fill="#e8dcc0">Base Success: 85% · Craft Speed: 30%</text>
+    <text x="322" y="472" font-size="9" fill="#e8dcc0">Durability: 640 / 800 uses</text>
+  </g>
+
+  <!-- right: stat preview + create + archive -->
+  <g>
+    <rect x="596" y="134" width="244" height="364" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="610" y="156" font-size="10" fill="#9c8a68" letter-spacing="1">STAT PREVIEW</text>
+    <text x="610" y="174" font-size="9" fill="#e8dcc0">HP: 210 · Damage: 24-32</text>
+    <text x="610" y="190" font-size="9" fill="#e8dcc0">Flight: Yes · Breath: Fire</text>
+    <text x="610" y="206" font-size="9" fill="#e8dcc0">+15% Health (Incubator bonus)</text>
+
+    <rect x="610" y="228" width="150" height="34" rx="6" fill="url(#buttonWood)" stroke="#e9d9a8" stroke-width="1.5"/>
+    <text x="685" y="250" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">BEGIN GROWTH</text>
+
+    <text x="610" y="292" font-size="9" fill="#9c8a68" letter-spacing="1">CREATURE ARCHIVE</text>
+    <text x="610" y="310" font-size="9" fill="#c9b183">• Young Drake (saved template)</text>
+    <text x="610" y="326" font-size="9" fill="#c9b183">• Griffon (saved template)</text>
+
+    <text x="610" y="360" font-size="9" fill="#9c8a68" letter-spacing="1">NOTE</text>
+    <text x="610" y="378" font-size="8" fill="#c9b183">Requires Mana reservoir or manual</text>
+    <text x="610" y="392" font-size="8" fill="#c9b183">essence feed — see Advanced (Vat +</text>
+    <text x="610" y="406" font-size="8" fill="#c9b183">Power Conduits) for a wired alternative</text>
+  </g>
+
+  <text x="96" y="538" font-size="9" fill="#7a6a50">Reference mockup only — see crafting.md &quot;Bioforging Stations&quot; (Vitae Incubator) and devices.md &quot;Processing Vats&quot;.</text>
+</svg>

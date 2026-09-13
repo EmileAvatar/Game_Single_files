@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="panelWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a341c"/>
+      <stop offset="100%" stop-color="#2a1c0f"/>
+    </linearGradient>
+    <linearGradient id="buttonWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6226"/>
+      <stop offset="100%" stop-color="#5a3a14"/>
+    </linearGradient>
+    <radialGradient id="orbGlow" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#bfe8ff"/>
+      <stop offset="60%" stop-color="#5aa0d8"/>
+      <stop offset="100%" stop-color="#1c4a6e"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#14100b"/>
+  <rect x="60" y="40" width="840" height="520" rx="14" fill="url(#panelWood)" stroke="#c9a227" stroke-width="4"/>
+  <rect x="72" y="52" width="816" height="496" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <text x="96" y="88" font-size="24" font-weight="bold" fill="#f0dfa8">MAGIC ITEM CREATION</text>
+  <text x="96" y="108" font-size="12" fill="#c9b183" letter-spacing="1.5">SPELL FOCUS CRAFTING (BUILT FROM SCRATCH)</text>
+  <circle cx="866" cy="80" r="14" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+  <text x="866" y="85" text-anchor="middle" font-size="14" fill="#e8dcc0">✕</text>
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- base type tabs -->
+  <g font-size="9">
+    <rect x="90" y="134" width="90" height="24" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="135" y="150" text-anchor="middle" fill="#c9b183">SPELLBOOK</text>
+    <rect x="184" y="134" width="100" height="24" rx="4" fill="#5a3a14" stroke="#c9a227" stroke-width="1.5"/>
+    <text x="234" y="150" text-anchor="middle" fill="#f0dfa8" font-weight="bold">CRYSTAL BALL</text>
+    <rect x="288" y="134" width="70" height="24" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="323" y="150" text-anchor="middle" fill="#c9b183">STAFF</text>
+    <rect x="362" y="134" width="76" height="24" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="400" y="150" text-anchor="middle" fill="#c9b183">AMULET</text>
+    <rect x="442" y="134" width="60" height="24" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="472" y="150" text-anchor="middle" fill="#c9b183">RING</text>
+    <rect x="506" y="134" width="120" height="24" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="566" y="150" text-anchor="middle" fill="#c9b183">RUNE TATTOO</text>
+  </g>
+
+  <!-- left: orb visual + storage/durability -->
+  <g>
+    <rect x="90" y="172" width="200" height="326" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <circle cx="190" cy="232" r="46" fill="url(#orbGlow)" stroke="#c9a227" stroke-width="3"/>
+    <text x="102" y="300" font-size="9" fill="#9c8a68" letter-spacing="1">STORAGE CAPACITY</text>
+    <text x="102" y="316" font-size="10" fill="#e8dcc0">Limited (5-10 spells)</text>
+    <text x="102" y="338" font-size="9" fill="#9c8a68" letter-spacing="1">DURABILITY</text>
+    <text x="102" y="354" font-size="10" fill="#c96a5a">Fragile — shatters &amp; explodes if damaged</text>
+    <text x="102" y="380" font-size="9" fill="#9c8a68" letter-spacing="1">SPECIAL PROPERTY</text>
+    <text x="102" y="396" font-size="9" fill="#e8dcc0">Bonus power for attuned magic type</text>
+  </g>
+
+  <!-- center: crafting requirements + spell loading -->
+  <g>
+    <rect x="308" y="172" width="270" height="326" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="322" y="194" font-size="10" fill="#9c8a68" letter-spacing="1">CRAFTING REQUIREMENTS</text>
+    <g font-size="10" fill="#e8dcc0">
+      <text x="322" y="214">☑ Large clear crystal / glass sphere</text>
+      <text x="322" y="234">☑ Magical essence infusion</text>
+      <text x="322" y="254">☐ Precision enchanting pass</text>
+      <text x="322" y="274" fill="#9c8a68">☐ Optional: elemental attunement gem</text>
+    </g>
+    <line x1="322" y1="290" x2="562" y2="290" stroke="#8a6a3f"/>
+    <text x="322" y="312" font-size="10" fill="#9c8a68" letter-spacing="1">PREPARATION: SPELL LOADING</text>
+    <g>
+      <rect x="322" y="320" width="38" height="38" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="341" y="342" text-anchor="middle" font-size="7" fill="#f0dfa8">FIRE</text>
+      <rect x="368" y="320" width="38" height="38" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="387" y="342" text-anchor="middle" font-size="7" fill="#f0dfa8">HEAL</text>
+      <rect x="414" y="320" width="38" height="38" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+      <rect x="460" y="320" width="38" height="38" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+      <rect x="506" y="320" width="38" height="38" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+    </g>
+    <text x="322" y="380" font-size="9" fill="#9c8a68">2 / 8 spell patterns loaded</text>
+  </g>
+
+  <!-- right: weaknesses + create -->
+  <g>
+    <rect x="596" y="172" width="244" height="326" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="610" y="194" font-size="10" fill="#9c8a68" letter-spacing="1">WEAKNESSES</text>
+    <g font-size="9" fill="#c96a5a">
+      <text x="610" y="212">• Shatters if dropped or struck</text>
+      <text x="610" y="228">• Explodes when broken</text>
+      <text x="610" y="244">• Limited spell storage</text>
+      <text x="610" y="260">• Expensive to craft or replace</text>
+    </g>
+    <line x1="610" y1="276" x2="826" y2="276" stroke="#8a6a3f"/>
+    <text x="610" y="298" font-size="10" fill="#9c8a68" letter-spacing="1">MANA SYSTEM</text>
+    <text x="610" y="316" font-size="9" fill="#e8dcc0">1. Focus spell into artifact</text>
+    <text x="610" y="332" font-size="9" fill="#e8dcc0">2. Pattern stored indefinitely</text>
+    <text x="610" y="348" font-size="9" fill="#e8dcc0">3. Supply mana to cast</text>
+
+    <rect x="610" y="380" width="150" height="34" rx="6" fill="url(#buttonWood)" stroke="#e9d9a8" stroke-width="1.5"/>
+    <text x="685" y="402" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">CREATE FOCUS</text>
+  </g>
+
+  <text x="96" y="538" font-size="9" fill="#7a6a50">Reference mockup only — see UI.md &quot;Crafting Interfaces &gt; Magic Item Creation&quot; and arcane_spell_focus.md.</text>
+</svg>

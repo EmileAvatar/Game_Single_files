@@ -1,0 +1,30 @@
+Terrain of the Game
+
+- Properties
+  - ID
+  - Name
+  - Description
+  - Type
+    - Ground
+    - Wall
+    - Water
+    - Vegetation
+    - Underground
+    - Special
+  - Category
+    - Natural
+    - Constructed
+    - Hazardous
+    - Special
+  - Movement
+    - Passable
+    - Speed Modifier
+    - Requires [x]
+  - Elevation
+  - Effect
+    - Effect
+    - Trigger
+  - Biome Tags [x]
+  - Sprite
+    - Tile Sprite
+    - Variant [x]

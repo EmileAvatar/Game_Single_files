@@ -91,7 +91,7 @@ Worked example:
     * Guild Seal: (anti-forgery sigil)
 ```
 
-![Guild Card example](assets/guild_card.svg)
+![Guild Card example](assets/Web/guild_card.svg)
 
 ## Adventurer Rank
 
@@ -253,7 +253,7 @@ Worked example:
     * Bonus Objective: Recover the alpha wolf's pelt for +50 gold
 ```
 
-![The Howling Culling job board posting](assets/mission_howling_culling.svg)
+![The Howling Culling job board posting](assets/Web/mission_howling_culling.svg)
 
 ## Guild Services & Facilities
 

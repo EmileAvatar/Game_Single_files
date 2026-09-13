@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="panelWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a341c"/>
+      <stop offset="100%" stop-color="#2a1c0f"/>
+    </linearGradient>
+    <linearGradient id="buttonWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6226"/>
+      <stop offset="100%" stop-color="#5a3a14"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#14100b"/>
+  <rect x="60" y="40" width="840" height="520" rx="14" fill="url(#panelWood)" stroke="#c9a227" stroke-width="4"/>
+  <rect x="72" y="52" width="816" height="496" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <text x="96" y="88" font-size="22" font-weight="bold" fill="#f0dfa8">BIO CREATURE CREATE — SIMPLE SETUP</text>
+  <text x="96" y="108" font-size="12" fill="#c9b183" letter-spacing="1.5">TEMPLATE: BASIC ANIMAL (3-4 PARTS)</text>
+  <circle cx="866" cy="80" r="14" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+  <text x="866" y="85" text-anchor="middle" font-size="14" fill="#e8dcc0">✕</text>
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- template dropdown -->
+  <rect x="90" y="134" width="220" height="24" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+  <text x="100" y="150" font-size="10" fill="#c9b183">Template: Basic Animal ▾</text>
+
+  <!-- part slots grid -->
+  <g>
+    <rect x="90" y="172" width="260" height="326" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="104" y="194" font-size="10" fill="#9c8a68" letter-spacing="1">PART SLOTS</text>
+    <g font-size="8" fill="#c9b183">
+      <rect x="104" y="204" width="58" height="50" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="133" y="232" text-anchor="middle" fill="#f0dfa8">BRAIN</text>
+      <rect x="170" y="204" width="58" height="50" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="199" y="232" text-anchor="middle" fill="#f0dfa8">EYES</text>
+      <rect x="236" y="204" width="58" height="50" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="265" y="232" text-anchor="middle" fill="#f0dfa8">BODY</text>
+
+      <rect x="104" y="262" width="58" height="50" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="133" y="290" text-anchor="middle" fill="#f0dfa8">LIMBS</text>
+      <rect x="170" y="262" width="58" height="50" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+      <text x="199" y="290" text-anchor="middle" fill="#7a6a50">WINGS</text>
+      <rect x="236" y="262" width="58" height="50" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+      <text x="265" y="290" text-anchor="middle" fill="#7a6a50">TAIL</text>
+
+      <rect x="104" y="320" width="58" height="50" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+      <text x="133" y="348" text-anchor="middle" fill="#7a6a50">ORGANS</text>
+      <rect x="170" y="320" width="58" height="50" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="199" y="344" text-anchor="middle" fill="#f0dfa8">HIDE /</text>
+      <text x="199" y="354" text-anchor="middle" fill="#f0dfa8">SCALES</text>
+    </g>
+    <text x="104" y="398" font-size="9" fill="#9c8a68" letter-spacing="1">AVAILABLE PARTS (filtered)</text>
+    <text x="104" y="416" font-size="9" fill="#e8dcc0">Wolf Brain · Wolf Eyes · Wolf Limbs x4</text>
+    <text x="104" y="432" font-size="9" fill="#e8dcc0">Wolf Hide · Bear Claws · Hawk Eyes</text>
+  </g>
+
+  <!-- center: essences + compatibility + mutation -->
+  <g>
+    <rect x="366" y="172" width="230" height="326" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="380" y="194" font-size="10" fill="#9c8a68" letter-spacing="1">ESSENCE REQUIREMENT</text>
+    <g font-size="9" fill="#e8dcc0">
+      <text x="380" y="212">Life Essence</text>
+      <rect x="380" y="218" width="196" height="8" rx="4" fill="#1a1209"/>
+      <rect x="380" y="218" width="150" height="8" rx="4" fill="#3f8f4a"/>
+      <text x="380" y="242">Soul Essence</text>
+      <rect x="380" y="248" width="196" height="8" rx="4" fill="#1a1209"/>
+      <rect x="380" y="248" width="40" height="8" rx="4" fill="#7a5fbf"/>
+    </g>
+
+    <text x="380" y="284" font-size="9" fill="#9c8a68" letter-spacing="1">COMPATIBILITY METER</text>
+    <rect x="380" y="292" width="196" height="10" rx="5" fill="#1a1209"/>
+    <rect x="380" y="292" width="180" height="10" rx="5" fill="#3f8f4a"/>
+    <text x="380" y="316" font-size="9" fill="#c9b183">Compatible parts — no penalty</text>
+
+    <text x="380" y="342" font-size="9" fill="#9c8a68" letter-spacing="1">MUTATION RISK</text>
+    <rect x="380" y="350" width="196" height="10" rx="5" fill="#1a1209"/>
+    <rect x="380" y="350" width="35" height="10" rx="5" fill="#c9a227"/>
+    <text x="380" y="374" font-size="9" fill="#c9b183">35% minor · 10% critical failure</text>
+
+    <text x="380" y="400" font-size="9" fill="#9c8a68" letter-spacing="1">GROWTH TIME</text>
+    <text x="380" y="418" font-size="11" fill="#e8dcc0">2 days</text>
+  </g>
+
+  <!-- right: stat preview + create + archive -->
+  <g>
+    <rect x="616" y="172" width="224" height="326" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="630" y="194" font-size="10" fill="#9c8a68" letter-spacing="1">STAT PREVIEW</text>
+    <text x="630" y="212" font-size="9" fill="#e8dcc0">HP: 45  ·  Damage: 6-9</text>
+    <text x="630" y="228" font-size="9" fill="#e8dcc0">Speed: Medium</text>
+    <text x="630" y="244" font-size="9" fill="#e8dcc0">Abilities: Bite, Pack Tactics</text>
+
+    <rect x="630" y="264" width="150" height="34" rx="6" fill="url(#buttonWood)" stroke="#e9d9a8" stroke-width="1.5"/>
+    <text x="705" y="286" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">CREATE</text>
+
+    <text x="630" y="326" font-size="9" fill="#9c8a68" letter-spacing="1">CREATURE ARCHIVE</text>
+    <text x="630" y="344" font-size="9" fill="#c9b183">• Dire Wolf (saved template)</text>
+    <text x="630" y="360" font-size="9" fill="#c9b183">• Armored Bear (saved template)</text>
+  </g>
+
+  <text x="96" y="538" font-size="9" fill="#7a6a50">Reference mockup only — baseline flow, no growth-station shown. See UI.md &quot;Bioforging / Creature Creation Interface&quot;.</text>
+</svg>

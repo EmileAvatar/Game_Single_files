@@ -1,0 +1,21 @@
+Recipe of the Game
+
+- Properties
+  - ID
+  - Output Item
+  - Output Quantity
+  - Ingredients [x]
+    - Item
+    - Quantity
+  - Craft Station
+  - Craft Skill
+    - Skill
+    - Required Level
+  - Craft Time
+  - Success Chance
+  - Quality Tier
+    - Normal
+    - Fine
+    - Superior
+    - Masterwork
+    - Legendary

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="panelWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a341c"/>
+      <stop offset="100%" stop-color="#2a1c0f"/>
+    </linearGradient>
+    <linearGradient id="buttonWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6226"/>
+      <stop offset="100%" stop-color="#5a3a14"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#14100b"/>
+  <rect x="60" y="40" width="840" height="520" rx="14" fill="url(#panelWood)" stroke="#c9a227" stroke-width="4"/>
+  <rect x="72" y="52" width="816" height="496" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <text x="96" y="88" font-size="24" font-weight="bold" fill="#f0dfa8">INVENTORY</text>
+  <text x="96" y="108" font-size="12" fill="#c9b183" letter-spacing="1.5">GRID VIEW</text>
+  <circle cx="866" cy="80" r="14" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+  <text x="866" y="85" text-anchor="middle" font-size="14" fill="#e8dcc0">✕</text>
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- category tabs + search -->
+  <g font-size="10">
+    <rect x="90" y="134" width="46" height="22" rx="4" fill="#6e4a1f" stroke="#c9a227"/>
+    <text x="113" y="149" text-anchor="middle" fill="#f0dfa8">All</text>
+    <rect x="140" y="134" width="70" height="22" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="175" y="149" text-anchor="middle" fill="#c9b183">Weapons</text>
+    <rect x="214" y="134" width="60" height="22" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="244" y="149" text-anchor="middle" fill="#c9b183">Armor</text>
+    <rect x="278" y="134" width="82" height="22" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="319" y="149" text-anchor="middle" fill="#c9b183">Consumables</text>
+    <rect x="364" y="134" width="76" height="22" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="402" y="149" text-anchor="middle" fill="#c9b183">Materials</text>
+    <rect x="444" y="134" width="58" height="22" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="473" y="149" text-anchor="middle" fill="#c9b183">Quest</text>
+
+    <rect x="606" y="134" width="140" height="22" rx="11" fill="#1a1209" stroke="#8a6a3f"/>
+    <text x="616" y="149" fill="#7a6a50">🔍 Search…</text>
+    <rect x="756" y="134" width="84" height="22" rx="4" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="798" y="149" text-anchor="middle" fill="#c9b183">Sort ▾</text>
+  </g>
+
+  <!-- item grid -->
+  <g>
+    <rect x="90" y="168" width="470" height="330" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <!-- 6x4 grid of slots -->
+  </g>
+  <g id="grid"></g>
+  <!-- generate grid manually -->
+  <g>
+    <!-- row template repeated -->
+  </g>
+  <g fill="#3a2812" stroke="#8a6a3f" stroke-dasharray="2 2">
+    <rect x="102" y="180" width="60" height="60" rx="4"/><rect x="170" y="180" width="60" height="60" rx="4"/><rect x="238" y="180" width="60" height="60" rx="4"/><rect x="306" y="180" width="60" height="60" rx="4"/><rect x="374" y="180" width="60" height="60" rx="4"/><rect x="442" y="180" width="60" height="60" rx="4"/><rect x="510" y="180" width="36" height="60" rx="4"/>
+    <rect x="102" y="248" width="60" height="60" rx="4"/><rect x="170" y="248" width="60" height="60" rx="4"/><rect x="238" y="248" width="60" height="60" rx="4"/><rect x="306" y="248" width="60" height="60" rx="4"/><rect x="374" y="248" width="60" height="60" rx="4"/><rect x="442" y="248" width="60" height="60" rx="4"/>
+    <rect x="102" y="316" width="60" height="60" rx="4"/><rect x="170" y="316" width="60" height="60" rx="4"/><rect x="238" y="316" width="60" height="60" rx="4"/><rect x="306" y="316" width="60" height="60" rx="4"/><rect x="374" y="316" width="60" height="60" rx="4"/><rect x="442" y="316" width="60" height="60" rx="4"/>
+    <rect x="102" y="384" width="60" height="60" rx="4"/><rect x="170" y="384" width="60" height="60" rx="4"/><rect x="238" y="384" width="60" height="60" rx="4"/><rect x="306" y="384" width="60" height="60" rx="4"/><rect x="374" y="384" width="60" height="60" rx="4"/><rect x="442" y="384" width="60" height="60" rx="4"/>
+  </g>
+  <!-- a few filled slots with stack counts, one highlighted for context menu -->
+  <g>
+    <rect x="102" y="180" width="60" height="60" rx="4" fill="#5a3a14" stroke="#c9a227" stroke-width="2"/>
+    <text x="132" y="215" text-anchor="middle" font-size="9" fill="#f0dfa8">SWORD</text>
+    <rect x="170" y="180" width="60" height="60" rx="4" fill="#3a2812" stroke="#8a6a3f"/>
+    <text x="200" y="215" text-anchor="middle" font-size="9" fill="#c9b183">POTION</text>
+    <circle cx="220" cy="192" r="9" fill="#c9a227"/>
+    <text x="220" y="196" text-anchor="middle" font-size="8" fill="#2a1c0f">12</text>
+    <rect x="238" y="180" width="60" height="60" rx="4" fill="#3a2812" stroke="#8a6a3f"/>
+    <text x="268" y="215" text-anchor="middle" font-size="9" fill="#c9b183">ORE</text>
+    <circle cx="288" cy="192" r="9" fill="#c9a227"/>
+    <text x="288" y="196" text-anchor="middle" font-size="8" fill="#2a1c0f">40</text>
+  </g>
+
+  <text x="102" y="465" font-size="10" fill="#9c8a68" letter-spacing="1">WEIGHT / CAPACITY</text>
+  <rect x="102" y="472" width="404" height="12" rx="6" fill="#1a1209"/>
+  <rect x="102" y="472" width="260" height="12" rx="6" fill="#c9a227"/>
+  <text x="506" y="482" text-anchor="end" font-size="10" fill="#c9b183">64 / 100 kg</text>
+
+  <!-- context menu example, floating over the sword slot -->
+  <g>
+    <rect x="166" y="176" width="106" height="86" rx="5" fill="#1a1209" stroke="#c9a227" stroke-width="1.5"/>
+    <text x="176" y="192" font-size="9" fill="#e8dcc0">Use</text>
+    <text x="176" y="208" font-size="9" fill="#e8dcc0">Equip</text>
+    <text x="176" y="224" font-size="9" fill="#e8dcc0">Drop</text>
+    <text x="176" y="240" font-size="9" fill="#c96a5a">Destroy</text>
+  </g>
+
+  <!-- right column: tooltip + compare -->
+  <g>
+    <rect x="580" y="168" width="260" height="150" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="594" y="190" font-size="12" font-weight="bold" fill="#f0dfa8">Iron Sword</text>
+    <text x="594" y="208" font-size="9" fill="#c9b183">Weapon · Blade</text>
+    <text x="594" y="228" font-size="9" fill="#e8dcc0">Damage: 12-16</text>
+    <text x="594" y="244" font-size="9" fill="#e8dcc0">Durability: 100/100</text>
+    <text x="594" y="260" font-size="9" fill="#e8dcc0">Value: 45 gold</text>
+    <text x="594" y="282" font-size="8" fill="#9c8a68">A dependable blade for a new adventurer.</text>
+    <text x="594" y="304" font-size="8" fill="#7a6a50">Hover tooltip — item stats &amp; description</text>
+
+    <rect x="580" y="330" width="260" height="168" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="594" y="350" font-size="10" fill="#9c8a68" letter-spacing="1">COMPARE ITEMS</text>
+    <rect x="594" y="360" width="110" height="120" rx="4" fill="#1a1209" stroke="#8a6a3f"/>
+    <text x="649" y="378" text-anchor="middle" font-size="9" fill="#c9b183">Equipped</text>
+    <text x="604" y="398" font-size="9" fill="#e8dcc0">Steel Sword</text>
+    <text x="604" y="414" font-size="8" fill="#e8dcc0">Dmg: 14-18</text>
+    <rect x="716" y="360" width="110" height="120" rx="4" fill="#1a1209" stroke="#c9a227"/>
+    <text x="771" y="378" text-anchor="middle" font-size="9" fill="#f0dfa8">New</text>
+    <text x="726" y="398" font-size="9" fill="#e8dcc0">Iron Sword</text>
+    <text x="726" y="414" font-size="8" fill="#c96a5a">Dmg: 12-16 ▼</text>
+  </g>
+
+  <text x="96" y="538" font-size="9" fill="#7a6a50">Reference mockup only — see UI.md &quot;Inventory Management Screens &gt; Inventory Screen&quot; for the full field list.</text>
+</svg>

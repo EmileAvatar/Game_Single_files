@@ -623,6 +623,31 @@
 
 ---
 
+## SVG Reference Mockups
+
+Static SVG mockups illustrating specific screens/interfaces above, built for
+visual reference rather than production art. Stored in `assets/UI Template/`,
+one file per screen. Not every screen above has a mockup yet — this is the
+current target set from design notes, and screens are illustrated
+incrementally, so a screen missing here isn't a rejected one, just not
+reached yet.
+
+* **Main Screen** — not yet illustrated
+    * Will illustrate the Main Game Screen (see Core Gameplay Screens above)
+
+* **Mini-Game Screens** — all illustrated, one SVG per screen in `assets/UI Template/`
+    * Item Crafting (`item_crafting.svg`) — illustrates the Crafting Station Interface (see Crafting Interfaces above)
+    * Alchemy (`alchemy.svg`) — illustrates the Alchemy Interface (see Crafting Interfaces above)
+    * Forge Work (`forge_work.svg`) — Smithing-specific variant of the Crafting Station Interface, keyed to `crafting.md`'s Smithing Stations (Forge/Anvil/Rune Forge/Heavy Forge)
+    * Inventory Management (`inventory_management.svg`) — illustrates the Inventory Screen (see Inventory Management Screens above)
+    * Magic Item Enchantment (`magic_item_enchantment.svg`) — illustrates the Enchanting Interface (see Crafting Interfaces above)
+    * Magic Item Creation (`magic_item_creation.svg`) — creating a spell-focus item from scratch, distinct from Enchanting; keyed to `arcane_spell_focus.md`
+    * Bio Creature Create: Simple Setup (`bio_creature_create_simple.svg`) — illustrates the Bioforging / Creature Creation Interface's baseline flow (see Crafting Interfaces above)
+    * Bio Creature Create: Advanced with Vat (`bio_creature_create_advanced_vat.svg`) — adds the Creature Vat as a visible station, keyed to `crafting.md`'s Bioforging Stations and `devices.md`'s Processing Vats
+    * Bio Creature Create: Advanced with Vat + Power Conduits (`bio_creature_create_advanced_vat_power.svg`) — further adds visible power routing into the vat, keyed to `devices.md`'s Power Transmission group (Power Conduit, Line Inlay, Gear Train)
+
+---
+
 ## Notes
 
 All UI screens should follow consistent design principles:

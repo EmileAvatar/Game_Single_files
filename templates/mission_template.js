@@ -2,7 +2,7 @@
  * mission_template.js
  *
  * buildMissionSVG(data) -> SVG markup string, parametrizing the same layout
- * as assets/mission_howling_culling.svg (see guild.md's Mission Entry
+ * as assets/Web/mission_howling_culling.svg (see guild.md's Mission Entry
  * Template section). Requires template_utils.js to be loaded first
  * (window.TemplateUtils).
  *

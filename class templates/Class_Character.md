@@ -1,0 +1,23 @@
+Character of the Game
+
+- Properties
+  - ID
+  - Name
+  - Description
+  - Race
+  - Profession
+  - Level
+  - Stats
+    - [Primary Stat]
+    - [Secondary Stat]
+  - Skills [x]
+  - Equipment [x]
+    - Slot
+    - Item ID
+  - Guild
+    - Guild Name
+    - Adventurer Rank
+    - Guild Standing
+  - Portrait
+    - Portrait
+    - Icon

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="panelWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a341c"/>
+      <stop offset="100%" stop-color="#2a1c0f"/>
+    </linearGradient>
+    <linearGradient id="buttonWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6226"/>
+      <stop offset="100%" stop-color="#5a3a14"/>
+    </linearGradient>
+    <radialGradient id="arcaneGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#9a6fe8"/>
+      <stop offset="100%" stop-color="#3a1c6e"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#14100b"/>
+  <rect x="60" y="40" width="840" height="520" rx="14" fill="url(#panelWood)" stroke="#c9a227" stroke-width="4"/>
+  <rect x="72" y="52" width="816" height="496" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <text x="96" y="88" font-size="24" font-weight="bold" fill="#f0dfa8">ENCHANTING</text>
+  <text x="96" y="108" font-size="12" fill="#c9b183" letter-spacing="1.5">STATION: ENCHANTING ALTAR</text>
+  <circle cx="866" cy="80" r="14" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+  <text x="866" y="85" text-anchor="middle" font-size="14" fill="#e8dcc0">✕</text>
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- left: item to enchant + enchant slots -->
+  <g>
+    <rect x="90" y="136" width="200" height="362" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="104" y="158" font-size="10" fill="#9c8a68" letter-spacing="1">ITEM TO ENCHANT</text>
+    <rect x="104" y="166" width="80" height="80" rx="6" fill="url(#arcaneGlow)" stroke="#c9a227" stroke-width="2"/>
+    <text x="144" y="210" text-anchor="middle" font-size="10" fill="#fff">Steel Sword</text>
+
+    <text x="104" y="272" font-size="9" fill="#9c8a68" letter-spacing="1">ENCHANTMENT SLOTS</text>
+    <rect x="104" y="280" width="30" height="30" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+    <text x="119" y="298" text-anchor="middle" font-size="7" fill="#f0dfa8">FIRE</text>
+    <rect x="140" y="280" width="30" height="30" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+    <rect x="176" y="280" width="30" height="30" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+
+    <text x="104" y="336" font-size="9" fill="#9c8a68" letter-spacing="1">ENHANCEMENT LEVEL</text>
+    <text x="104" y="354" font-size="12" fill="#e8dcc0">+1 / +5</text>
+
+    <text x="104" y="386" font-size="9" fill="#9c8a68" letter-spacing="1">PREVIOUSLY ENCHANTED</text>
+    <text x="104" y="404" font-size="9" fill="#c9b183">• Iron Dagger (+Frost)</text>
+    <text x="104" y="420" font-size="9" fill="#c9b183">• Oak Staff (+Focus)</text>
+  </g>
+
+  <!-- center: enchantment selection -->
+  <g>
+    <rect x="308" y="136" width="270" height="362" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="322" y="158" font-size="10" fill="#9c8a68" letter-spacing="1">ENCHANTMENT SELECTION</text>
+    <g font-size="11" fill="#e8dcc0">
+      <rect x="320" y="166" width="240" height="24" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="328" y="182">Flametongue (Fire +10 dmg)</text>
+      <text x="328" y="206">Frostbite (Ice, slows target)</text>
+      <text x="328" y="230">Sharpness (+15% crit)</text>
+      <text x="328" y="254">Vampiric (5% lifesteal)</text>
+      <text x="328" y="278">Warding (+10 magic resist)</text>
+    </g>
+    <line x1="322" y1="296" x2="562" y2="296" stroke="#8a6a3f"/>
+    <text x="322" y="316" font-size="10" fill="#9c8a68" letter-spacing="1">PREVIEW: STAT CHANGES</text>
+    <text x="322" y="336" font-size="11" fill="#6fae6f">Fire Damage +10</text>
+    <text x="322" y="354" font-size="11" fill="#6fae6f">Ignite Chance +15%</text>
+    <text x="322" y="372" font-size="11" fill="#c96a5a">Weight +0.5</text>
+
+    <text x="322" y="398" font-size="9" fill="#9c8a68" letter-spacing="1">REQUIRED ESSENCES / CRYSTALS</text>
+    <text x="322" y="416" font-size="10" fill="#e8dcc0">3 Mana · 3 Crystal Shards</text>
+  </g>
+
+  <!-- right: rates + apply -->
+  <g>
+    <rect x="596" y="136" width="244" height="362" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="610" y="158" font-size="10" fill="#9c8a68" letter-spacing="1">SUCCESS RATE</text>
+    <rect x="610" y="166" width="210" height="14" rx="7" fill="#1a1209"/>
+    <rect x="610" y="166" width="176" height="14" rx="7" fill="#3f8f4a"/>
+    <text x="820" y="177" text-anchor="end" font-size="10" fill="#e8dcc0">84%</text>
+
+    <text x="610" y="204" font-size="10" fill="#9c8a68" letter-spacing="1">DESTRUCTION RISK</text>
+    <rect x="610" y="212" width="210" height="14" rx="7" fill="#1a1209"/>
+    <rect x="610" y="212" width="21" height="14" rx="7" fill="#a5382f"/>
+    <text x="820" y="223" text-anchor="end" font-size="10" fill="#e8dcc0">10%</text>
+    <text x="610" y="244" font-size="9" fill="#c96a5a">⚠ Failure may destroy the item</text>
+
+    <rect x="610" y="266" width="150" height="34" rx="6" fill="url(#buttonWood)" stroke="#e9d9a8" stroke-width="1.5"/>
+    <text x="685" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">APPLY ENCHANTMENT</text>
+
+    <text x="610" y="332" font-size="9" fill="#9c8a68" letter-spacing="1">POWER OPTION</text>
+    <text x="610" y="350" font-size="9" fill="#c9b183">Use Elemental Mana for +bonus on matching element</text>
+  </g>
+
+  <text x="96" y="538" font-size="9" fill="#7a6a50">Reference mockup only — see UI.md &quot;Crafting Interfaces &gt; Enchanting Interface&quot; and crafting.md &quot;Enchanting Stations&quot;.</text>
+</svg>

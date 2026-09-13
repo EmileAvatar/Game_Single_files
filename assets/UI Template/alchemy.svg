@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="panelWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a341c"/>
+      <stop offset="100%" stop-color="#2a1c0f"/>
+    </linearGradient>
+    <linearGradient id="buttonWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6226"/>
+      <stop offset="100%" stop-color="#5a3a14"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" fill="#14100b"/>
+  <rect x="60" y="40" width="840" height="520" rx="14" fill="url(#panelWood)" stroke="#c9a227" stroke-width="4"/>
+  <rect x="72" y="52" width="816" height="496" rx="10" fill="none" stroke="#8a6a3f" stroke-width="1.5" stroke-dasharray="2 4"/>
+
+  <text x="96" y="88" font-size="24" font-weight="bold" fill="#f0dfa8">ALCHEMY</text>
+  <text x="96" y="108" font-size="12" fill="#c9b183" letter-spacing="1.5">STATION: ALCHEMY TABLE</text>
+  <circle cx="866" cy="80" r="14" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+  <text x="866" y="85" text-anchor="middle" font-size="14" fill="#e8dcc0">✕</text>
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#8a6a3f" stroke-width="1.5"/>
+
+  <!-- three-tier pipeline -->
+  <g font-size="10" fill="#e8dcc0">
+    <rect x="90" y="134" width="160" height="40" rx="6" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="170" y="150" text-anchor="middle" fill="#c9b183">TIER 1</text>
+    <text x="170" y="166" text-anchor="middle">Raw Materials → Extraction</text>
+    <text x="258" y="158" text-anchor="middle" fill="#c9a227" font-size="16">→</text>
+    <rect x="272" y="134" width="180" height="40" rx="6" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="362" y="150" text-anchor="middle" fill="#c9b183">TIER 2</text>
+    <text x="362" y="166" text-anchor="middle">Reagents → Alchemical Essences</text>
+    <text x="460" y="158" text-anchor="middle" fill="#c9a227" font-size="16">→</text>
+    <rect x="474" y="134" width="180" height="40" rx="6" fill="#241a10" stroke="#8a6a3f"/>
+    <text x="564" y="150" text-anchor="middle" fill="#c9b183">TIER 3</text>
+    <text x="564" y="166" text-anchor="middle">Essences → Final Products</text>
+  </g>
+
+  <!-- left: recipe categories -->
+  <g>
+    <rect x="90" y="188" width="200" height="310" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="100" y="206" font-size="10" fill="#9c8a68" letter-spacing="1">RECIPES BY CATEGORY</text>
+    <g font-size="11" fill="#e8dcc0">
+      <text x="100" y="228" fill="#c9b183">Potions / Elixirs / Transmutations</text>
+      <rect x="98" y="236" width="184" height="22" rx="4" fill="#5a3a14" stroke="#c9a227"/>
+      <text x="106" y="251">Healing Potion</text>
+      <text x="108" y="272">Mana Elixir</text>
+      <text x="108" y="292" fill="#c9b183">Elemental / Vital / Mental / Physical</text>
+      <text x="108" y="312">Fire Resist Draught</text>
+      <text x="108" y="332">Stamina Tonic</text>
+      <text x="108" y="352" fill="#c9b183">Transformation / Necromantic / Divine</text>
+      <text x="108" y="372">Blight Toxin</text>
+    </g>
+    <text x="100" y="480" font-size="9" fill="#7a6a50">Container required: Glass Vial</text>
+  </g>
+
+  <!-- center: ingredient/catalyst slots -->
+  <g>
+    <rect x="308" y="188" width="270" height="310" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="322" y="208" font-size="13" font-weight="bold" fill="#f0dfa8">Healing Potion</text>
+    <text x="322" y="226" font-size="10" fill="#9c8a68" letter-spacing="1">INGREDIENT SLOTS</text>
+    <rect x="322" y="234" width="42" height="42" rx="4" fill="#3a2812" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+    <text x="343" y="258" text-anchor="middle" font-size="8" fill="#c9b183">HERB</text>
+    <rect x="372" y="234" width="42" height="42" rx="4" fill="#3a2812" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+    <text x="393" y="258" text-anchor="middle" font-size="8" fill="#c9b183">WATER</text>
+    <rect x="422" y="234" width="42" height="42" rx="4" fill="#241a10" stroke="#8a6a3f" stroke-dasharray="2 2"/>
+    <text x="443" y="258" text-anchor="middle" font-size="7" fill="#7a6a50">EMPTY</text>
+
+    <text x="322" y="300" font-size="10" fill="#9c8a68" letter-spacing="1">CATALYST / ESSENCE</text>
+    <rect x="322" y="308" width="42" height="42" rx="4" fill="#3a2812" stroke="#c9a227" stroke-width="1.5"/>
+    <text x="343" y="332" text-anchor="middle" font-size="8" fill="#f0dfa8">CRYSTAL</text>
+
+    <text x="322" y="376" font-size="10" fill="#9c8a68" letter-spacing="1">PROCESS TIME</text>
+    <rect x="322" y="384" width="234" height="12" rx="6" fill="#1a1209"/>
+    <rect x="322" y="384" width="120" height="12" rx="6" fill="#3a6ea5"/>
+    <text x="322" y="412" font-size="10" fill="#c9b183">45 minutes remaining</text>
+
+    <rect x="322" y="428" width="234" height="22" rx="4" fill="#3a2812" stroke="#c9a227" stroke-dasharray="3 2"/>
+    <text x="439" y="443" text-anchor="middle" font-size="9" fill="#e8b96a">Experimentation Mode (no recipe)</text>
+  </g>
+
+  <!-- right: output + risk -->
+  <g>
+    <rect x="596" y="188" width="244" height="310" rx="6" fill="#241a10" stroke="#8a6a3f" stroke-width="1.5"/>
+    <text x="610" y="208" font-size="10" fill="#9c8a68" letter-spacing="1">OUTPUT</text>
+    <rect x="610" y="216" width="100" height="70" rx="6" fill="#3a2812" stroke="#c9a227" stroke-width="2"/>
+    <text x="660" y="255" text-anchor="middle" font-size="10" fill="#f0dfa8">Healing Potion</text>
+
+    <text x="610" y="312" font-size="10" fill="#9c8a68" letter-spacing="1">SUCCESS CHANCE</text>
+    <rect x="610" y="320" width="210" height="12" rx="6" fill="#1a1209"/>
+    <rect x="610" y="320" width="178" height="12" rx="6" fill="#3f8f4a"/>
+    <text x="820" y="330" text-anchor="end" font-size="9" fill="#e8dcc0">85%</text>
+
+    <text x="610" y="352" font-size="10" fill="#c96a5a">⚠ Risk: 5% explosive failure</text>
+
+    <rect x="610" y="366" width="150" height="34" rx="6" fill="url(#buttonWood)" stroke="#e9d9a8" stroke-width="1.5"/>
+    <text x="685" y="388" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">BREW</text>
+
+    <text x="610" y="424" font-size="10" fill="#9c8a68" letter-spacing="1">ESSENCE STORAGE</text>
+    <g font-size="8" fill="#e8dcc0">
+      <text x="610" y="440">Herbal Extract</text>
+      <rect x="610" y="446" width="210" height="6" rx="3" fill="#1a1209"/>
+      <rect x="610" y="446" width="140" height="6" rx="3" fill="#c9a227"/>
+      <text x="610" y="464">Vital Essence</text>
+      <rect x="610" y="470" width="210" height="6" rx="3" fill="#1a1209"/>
+      <rect x="610" y="470" width="70" height="6" rx="3" fill="#c9a227"/>
+    </g>
+  </g>
+
+  <text x="96" y="538" font-size="9" fill="#7a6a50">Reference mockup only — see UI.md &quot;Crafting Interfaces &gt; Alchemy Interface&quot; and alchemy.md for full field definitions.</text>
+</svg>

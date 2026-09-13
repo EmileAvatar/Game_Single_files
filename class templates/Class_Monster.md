@@ -1,0 +1,52 @@
+Monster of the Game
+
+- Properties
+  - ID
+  - Name
+  - Description
+  - Type
+    - Humanoid
+    - Beast
+    - Undead
+    - Demon
+    - Dragon
+    - Elemental
+    - Construct
+    - Aberration
+    - Giant
+    - Insect
+    - Reptile
+    - Avian
+    - Aquatic
+    - Plant
+    - Ethereal
+    - Chimera
+    - Fey
+    - Slime
+    - Colossal
+  - Rank
+    - S
+    - A
+    - B
+    - C
+    - D
+    - E
+    - F
+  - Stats
+    - Health
+    - [Primary Stat]
+    - [Secondary Stat]
+  - Elements
+    - Weakness [x]
+    - Resistance [x]
+    - Immunity [x]
+  - Abilities [x]
+  - Loot Table [x]
+  - Behavior
+    - Aggressive
+    - Passive
+    - Territorial
+    - Fleeing
+  - Sprite
+    - Sprite
+    - Animation [x]

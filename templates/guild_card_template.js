@@ -2,7 +2,7 @@
  * guild_card_template.js
  *
  * buildGuildCardSVG(data) -> SVG markup string, parametrizing the same
- * layout as assets/guild_card.svg (see guild.md's Guild Card section).
+ * layout as assets/Web/guild_card.svg (see guild.md's Guild Card section).
  * Requires template_utils.js to be loaded first (window.TemplateUtils).
  *
  * data fields (all optional, sensible defaults/placeholders used if omitted):
